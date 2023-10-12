@@ -23,15 +23,11 @@ public class Main {
             System.out.print("Geben Sie die gewünschte Operation ein (+, -, *, /): ");
             String operator = scanner.nextLine();
 
-            try {
-                System.out.print("Geben Sie den ersten Operanden ein: ");
-                String firstOperand = Integer.valueOf(scanner.nextLine());
+            System.out.print("Geben Sie den ersten Operanden ein: ");
+            int firstOperand = scanner.nextInt();
 
-                System.out.print("Geben Sie den zweiten Operanden ein: ");
-                String lastOperand = Integer.valueOf(scanner.nextLine());
-            } catch (NumberFormatException e) {
-                System.out.print("Error: failed to convert string to number");
-            }
+            System.out.print("Geben Sie den zweiten Operanden ein: ");
+            int lastOperand = scanner.nextInt();
 
             switch (operator) {
                 case "+":
@@ -48,12 +44,16 @@ public class Main {
 
                 case "/":
                     System.out.println(firstOperand / lastOperand);
+                    break
+
+                default:
+                    System.out.println("Wie bitte?");
 
             }
 
             System.out.print("Möchten Sie eine weitere Berechnung durchführen? (ja/nein): ");
             if (scanner.nextLine() == "nein") {
-                return
+                break
             }
         }
     }
@@ -62,5 +62,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(task1(scanner))
+        task2(scanner)
     }
 }
