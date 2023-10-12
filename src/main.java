@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Passwort eingeben: ");
         String password = scanner.nextLine();
 
-        if (username == "admin") {
+        if (username.equals("admin") && password.equals("")) {
             return "Anmeldung erfolgreich!";
         }
         return "Anmeldung fehlgeschlagen!";
