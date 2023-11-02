@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static String task1(Scanner scanner) {
+    public static void task1(Scanner scanner) {
         System.out.print("Geben Sie Ihren Benutzernamen ein: ");
         String username = scanner.nextLine();
 
@@ -10,9 +10,10 @@ public class Main {
         String password = scanner.nextLine();
 
         if (username.equals("admin") && password.equals("geheim")) {
-            return "Anmeldung erfolgreich!";
+            System.out.println("Anmeldung erfolgreich!");
+            return
         }
-        return "Anmeldung fehlgeschlagen!";
+        System.out.println("Anmeldung fehlgeschlagen!");
     }
     
 
