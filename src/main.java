@@ -11,11 +11,11 @@ public class Main {
 
         if (username.equals("admin") && password.equals("geheim")) {
             System.out.println("Anmeldung erfolgreich!");
-            return
+        } else {
+            System.out.println("Anmeldung fehlgeschlagen!");
         }
-        System.out.println("Anmeldung fehlgeschlagen!");
     }
-    
+
 
     public static void task2(Scanner scanner) {
         System.out.println("Willkommen beim Taschenrechner!");
@@ -65,7 +65,7 @@ public class Main {
             }
         }
     }
-    
+
 
     public static void task3(Scanner scanner) {
         double usdToEurRate = 0.85;
@@ -116,11 +116,11 @@ public class Main {
 
     }
 
-    
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(task1(scanner));
+        task1(scanner);
         task2(scanner);
         task3(scanner);
         scanner.close(); 
