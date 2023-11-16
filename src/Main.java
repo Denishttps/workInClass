@@ -46,9 +46,9 @@ public class Main {
                     break;
 
                 case "/":
-                    if (lastOperand != 0) { 
+                    try {
                         System.out.println(firstOperand / lastOperand);
-                    } else {
+                    } catch (ArithmeticException e) {
                         System.out.println("Division by zero error.");
                     }
                     break;
