@@ -68,9 +68,9 @@ public class Main {
 
 
     public static void task3(Scanner scanner) {
-        double usdToEurRate = 0.85;
-        double eurToJpyRate = 130.0;
-        double jpyToUsdRate = 0.009;
+        double usdToEurRate = 0.92;
+        double eurToJpyRate = 163.87;
+        double jpyToUsdRate = 0.0066;
 
         String[] currencies = { "USD (US-Dollar)", "EUR (Euro)", "JPY (Japanischer Yen)" };
 
