@@ -30,7 +30,7 @@ public class Main {
             System.out.print("Geben Sie den zweiten Operanden ein: ");
             int lastOperand = scanner.nextInt();
 
-            scanner.nextLine(); // Чтобы перейти на новую строку и избежать проблем с последующим вводом.
+            scanner.nextLine();
 
             switch (operator) {
                 case "+":
