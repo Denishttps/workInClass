@@ -94,11 +94,11 @@ class Main {
     }
 
 
-    public static double berechneDurchschnitt(int... grade) {
-        int sum = 0;
-        for (int grades : grade) {
-            sum += grades;
+    public static String berechneDurchschnitt(int... grades) {
+        double sum = 0;
+        for (int grade : grades) {
+            sum += grade;
         }
-        return sum / grades.length;
-    }  
+        return String.format("%.3f", sum / grades.length);
+    }
 }
