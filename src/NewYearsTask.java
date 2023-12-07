@@ -99,6 +99,6 @@ class Main {
         for (int grades : grade) {
             sum += grades;
         }
-        return sum / grade.length;
+        return sum / grades.length;
     }  
 }
